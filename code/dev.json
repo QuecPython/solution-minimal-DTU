@@ -1,0 +1,21 @@
+{
+    "PROJECT_NAME": "QuecPython_DTU_DEMO",
+    "PROJECT_VERSION": "1.0.0",
+    "SERVER": {
+        "host": "220.180.239.212",
+        "port": "8305",
+        "timeout": 5,
+        "keep_alive": 5
+    },
+    "UART": {
+        "port": 2,
+        "baudrate": 115200,
+        "bytesize": 8,
+        "parity": 0,
+        "stopbits": 1,
+        "flowctl": 0
+    },
+    "LED": {
+        "GPIOn": 16
+    }
+}

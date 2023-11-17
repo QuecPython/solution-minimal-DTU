@@ -137,6 +137,20 @@ In this document, an echo server is used, which means that the data is immediate
 
 ### Initialization Process
 
+```mermaid
+graph TD;
+	start("start") --> init_dtu["initialize DTU Object"]
+	init_dtu --> configure["read json configure"]
+	configure --> poweron_print["poweron print once"]
+	poweron_print --> checkNet["check network until ready"]
+	checkNet --> open_serial["open serial"]
+	open_serial --> connect_cloud["connect to tcp server"]
+	connect_cloud --> start_up_and_down_thread["start uplink/downlink thread"]
+	start_up_and_down_thread --> end_("end")
+```
+
+
+
 Refer to `code/dtu.py` for the initialization process.
 
 ```python

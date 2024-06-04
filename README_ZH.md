@@ -51,7 +51,7 @@
 
 ## 操作演示
 
-接下来我们使用搭载了`EC200U`模组的开发板 [QuecPython_EC2X_EVB_V2.0](https://python.quectel.com/doc/Getting_started/en/evb/ec2x-evb.html) 来做演示。
+接下来我们使用搭载了`EC200U`模组的开发板 [QuecPython_EC2X_EVB_V2.0](https://python.quectel.com/doc/Getting_started/zh/evb/ec2x-evb.html) 来做演示。
 
 如下图所示，设备使用type-c给模块供电，UART与TTL转USB模块连接至开发电脑，可轻松实现调试。
 
@@ -77,10 +77,10 @@
 
 ### 功能调试
 
-参考[快速入门](https://python.quectel.com/doc/Getting_started/en/)相关文档查看开发环境搭建流程:
+参考[快速入门](https://python.quectel.com/doc/Getting_started/zh/)相关文档查看开发环境搭建流程:
 
-- 驱动[下载与安装](https://python.quectel.com/doc/Getting_started/en/driver_prepare.html)
-- QPYCom [下载](./media/qpycom_download.png)与[使用](https://python.quectel.com/doc/Application_guide/en/dev-tools/QPYcom/index.html)
+- 驱动[下载与安装](https://python.quectel.com/doc/Getting_started/zh/driver_prepare.html)
+- QPYCom [下载](./media/qpycom_download.png)与[使用](https://python.quectel.com/doc/Application_guide/zh/dev-tools/QPYcom/index.html)
 
 #### 打开repl串口
 
@@ -214,11 +214,11 @@ dtu -->> cloud: uplink data
 
 | 文档描述                     | 链接                                                         |
 | ---------------------------- | ------------------------------------------------------------ |
-| QuecPython API 手册          | https://python.quectel.com/doc/API_reference/en/index.html   |
-| QuecPython 入门开发教程      | https://python.quectel.com/doc/Getting_started/en/           |
-| 资源下载(固件、工具、驱动等) | https://python.quectel.com/en/download                       |
-| EC2X开发板介绍               | https://python.quectel.com/doc/Getting_started/en/evb/ec2x-evb.html |
-| EC200U-EU模组介绍            | https://python.quectel.com/en/products/ec200u-eu             |
+| QuecPython API 手册          | https://python.quectel.com/doc/API_reference/zh/index.html   |
+| QuecPython 入门开发教程      | https://python.quectel.com/doc/Getting_started/zh/           |
+| 资源下载(固件、工具、驱动等) | https://python.quectel.com/download                       |
+| EC2X开发板介绍               | https://python.quectel.com/doc/Getting_started/zh/evb/ec2x-evb.html |
+| EC200U-EU模组介绍            | https://python.quectel.com/products/ec200u-eu             |
 
 ## 常见问题
 
@@ -228,9 +228,9 @@ dtu -->> cloud: uplink data
 >
 > - 检查QCOM是否选择正确的端口打开。
 >- 检查接线是否正确，模组RX接TTL转USB设备的TX，模组TX接TTL转USB设备的RX。
-> - 应用代码配置的QuecPython串口编号选择是否正确。参阅：<https://python.quectel.com/doc/API_reference/en/QuecPython_classlib/machine.UART.html> 中针对不同的模组，开放的UART列表 。
+> - 应用代码配置的QuecPython串口编号选择是否正确。参阅：<https://python.quectel.com/doc/API_reference/zh/QuecPython_classlib/machine.UART.html> 中针对不同的模组，开放的UART列表 。
 
 2. **网络连接异常。**
 
-> 可以通过`checkNet`的`waitNetworkReady`函数返回值判定，返回值代表含义详情参阅：<https://python.quectel.com/doc/API_reference/en/QuecPython_classlib/checkNet.html>。
+> 可以通过`checkNet`的`waitNetworkReady`函数返回值判定，返回值代表含义详情参阅：<https://python.quectel.com/doc/API_reference/zh/QuecPython_classlib/checkNet.html>。
 

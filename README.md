@@ -1,6 +1,6 @@
 # Minimal DTU
 
-[[简体中文](./README_ZH.md)]
+[中文](./README_ZH.md) | English
 
 ## Overview
 
